@@ -7,6 +7,7 @@
         public required string OtherNames { get; set; }
         public DateOnly DateOfBirth { get; set; }
         public string? Photo {  get; set; }
-        public required string StaffAccessCode { get; set; }
+        public required int StaffAccessCode { get; set; }
+        public string EmployeeNumber { get; set; } = string.Empty;
     }
 }
