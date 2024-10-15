@@ -35,7 +35,7 @@ This repository contains the backend code for the HRManagement application. It i
 ## 🚀 Deployment Plan <a name="dep-doc"></a>
 
 - [Deployment Plan](./Doc/DeploymentPlan)
-- [PublishPackageBackend](./bin/release/net8.0/publish)
+- [PublishPackageBackend](./DeploymentPackage)
 - [PublishPackageFrontend](./bin/release/net8.0/publish)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
