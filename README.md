@@ -36,7 +36,7 @@ This repository contains the backend code for the HRManagement application. It i
 
 - [Deployment Plan](./Doc/DeploymentPlan)
 - [PublishPackageBackend](./DeploymentPackage)
-- [PublishPackageFrontend](./bin/release/net8.0/publish)
+- [PublishPackageFrontend](https://github.com/Koshao-sys/HRManagementApp-FrontEnd/tree/main/PublishPackageFrontEnd)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
