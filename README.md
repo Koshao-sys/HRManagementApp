@@ -34,7 +34,7 @@ This repository contains the backend code for the HRManagement application. It i
 
 ## 🚀 Deployment Plan and Publish pacakages <a name="dep-doc"></a>
 
-- [Deployment Plan](./Doc/DeploymentPlan)
+- [Deployment Plan](./Doc/DeploymentPlan.pdf)
 - [PublishPackageBackend](./DeploymentPackage)
 - [PublishPackageFrontend](https://github.com/Koshao-sys/HRManagementApp-FrontEnd/tree/main/PublishPackageFrontEnd)
 
