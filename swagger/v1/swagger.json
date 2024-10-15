@@ -1,0 +1,188 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "HRManagementApp",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/logs": {
+      "get": {
+        "tags": [
+          "ApiPerformanceLogs"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/register": {
+      "post": {
+        "tags": [
+          "Register"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterStaffDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterStaffDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterStaffDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/retrieval": {
+      "get": {
+        "tags": [
+          "Register"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/retrieval/{id}": {
+      "get": {
+        "tags": [
+          "Register"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/update/{id}": {
+      "put": {
+        "tags": [
+          "Register"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStaffRegisterDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStaffRegisterDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStaffRegisterDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "RegisterStaffDto": {
+        "required": [
+          "dateOfBirth",
+          "otherNames",
+          "staffAccessCode",
+          "surname"
+        ],
+        "type": "object",
+        "properties": {
+          "surname": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "otherNames": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "dateOfBirth": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "photo": {
+            "type": "string",
+            "nullable": true
+          },
+          "staffAccessCode": {
+            "maximum": 9999999999,
+            "minimum": 1000000000,
+            "type": "integer",
+            "format": "int32"
+          },
+          "employeeNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateStaffRegisterDto": {
+        "required": [
+          "dateOfBirth"
+        ],
+        "type": "object",
+        "properties": {
+          "dateOfBirth": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "photo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

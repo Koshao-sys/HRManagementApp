@@ -33,11 +33,8 @@ namespace HRManagementApp.Repository
             if (registerModel == null)
                 return null;
 
-            registerModel.Surname = record.Surname;
-            registerModel.OtherNames = record.OtherNames;
             registerModel.DateOfBirth = DateOnly.Parse(record.DateOfBirth);
             registerModel.Photo = record.Photo;
-            registerModel.StaffAccessCode = record.StaffAccessCode;
             await _context.SaveChangesAsync();
 
             return registerModel;
