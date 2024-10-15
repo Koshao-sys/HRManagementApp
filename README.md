@@ -34,7 +34,7 @@ This repository contains the backend code for the HRManagement application. It i
 
 ## 🚀 Deployment Plan <a name="dep-doc"></a>
 
-- [API Documentation](./Doc/DeploymentPlan)
+- [Deployment Plan](./Doc/DeploymentPlan)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
