@@ -44,6 +44,7 @@ This repository contains the backend code for the HRManagement application. It i
 
 > MS SQL.
 > .Net Core.
+> C#
 
 ### Key Features <a name="key-features"></a>
 
