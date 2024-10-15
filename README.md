@@ -35,6 +35,8 @@ This repository contains the backend code for the HRManagement application. It i
 ## 🚀 Deployment Plan <a name="dep-doc"></a>
 
 - [Deployment Plan](./Doc/DeploymentPlan)
+- [PublishPackageBackend](./bin/release/net8.0/publish)
+- [PublishPackageFrontend](./bin/release/net8.0/publish)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -64,7 +66,7 @@ This repository contains the backend code for the HRManagement application. It i
 
 to run on your localhost clone the project to local folder
 
-> cd hotel-booking-app-backend
+> cd HRManagementApp
 
 ## Available Scripts
 

@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Swagger\v1\" />
+    <Folder Include="DeploymentPackage\" />
   </ItemGroup>
 
 </Project>
