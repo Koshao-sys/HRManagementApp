@@ -18,15 +18,11 @@
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#Run-tests)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Hotel Booking App Backend <a name="about-project"></a>
+# 📖 HRManagament App <a name="about-project"></a>
 
 This repository contains the backend code for the HRManagement application. It is built using .Net Core WebApi and the [link](https://github.com/Koshao-sys/HRManagementApp-FrontEnd) to the front end.
 
@@ -36,12 +32,19 @@ This repository contains the backend code for the HRManagement application. It i
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Deployment Plan <a name="dep-doc"></a>
+
+- [API Documentation](./Doc/DeploymentPlan)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🛠 Built With <a name="built-with"> </a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 > MS SQL.
 > .Net Core.
+> C#
 
 ### Key Features <a name="key-features"></a>
 
