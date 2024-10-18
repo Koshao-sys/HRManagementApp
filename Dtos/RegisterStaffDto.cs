@@ -18,6 +18,6 @@ namespace HRManagementApp.Dtos
         [Required]
         [Range(1000000000, 9999999999, ErrorMessage = "Access Code must be a 10-digit number.")]
         public int StaffAccessCode { get; set; }
-        //public string EmployeeNumber { get; set; } = string.Empty;
+        public string FilePath { get; set; } = string.Empty;
     }
 }
