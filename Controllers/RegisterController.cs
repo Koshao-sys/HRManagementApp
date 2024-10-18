@@ -25,7 +25,7 @@ namespace HRManagementApp.Controllers
             {
                 var registerModel = staffDto.ToRegisterFromRegisterStaffDto();
                 await _registerRepo.RegisterStaffAsync(registerModel);
-
+                await _performanceLogger.LogRequestAsync($"/api/register", DateTime.Now, true);
                 return CreatedAtAction(nameof(GetStaffById), new { id = registerModel.Id }, registerModel.ToRegisterDto());
             }
             catch (Exception ex) 
@@ -48,6 +48,7 @@ namespace HRManagementApp.Controllers
             {
                 var allStaff = await _registerRepo.GetAllStaffAsync();
                 var staffDto = allStaff.Select(s => s.ToRegisterDto());
+                await _performanceLogger.LogRequestAsync($"/api/retrieval", DateTime.Now, true);
                 return Ok(staffDto);
             }
             catch (Exception ex)
@@ -72,6 +73,7 @@ namespace HRManagementApp.Controllers
                 if (staff == null)
                     return NotFound();
 
+                await _performanceLogger.LogRequestAsync($"/api/retrieval/{id}", DateTime.Now, true);
                 return Ok(staff.ToRegisterDto());
             }
             catch (Exception ex)
@@ -98,7 +100,7 @@ namespace HRManagementApp.Controllers
                 {
                     return NotFound();
                 }
-
+                await _performanceLogger.LogRequestAsync($"/api/update/{id}", DateTime.Now, true);
                 return Ok(registerModel.ToRegisterDto());
             }
             catch (Exception ex)

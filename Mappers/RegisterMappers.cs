@@ -27,7 +27,6 @@ namespace HRManagementApp.Mappers
                 DateOfBirth = DateOnly.Parse(registerDto.DateOfBirth),
                 Photo = registerDto.Photo,
                 StaffAccessCode = registerDto.StaffAccessCode,
-                EmployeeNumber = registerDto.EmployeeNumber
             };
         }
     }
